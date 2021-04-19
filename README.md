@@ -96,7 +96,7 @@ python3 main.py
    
 ## Usage
 
-Run the `main.py` file using `py -3 main.py` 
+~~Run the `main.py` file using `py -3 main.py` 
 The code will show you two promps:
 1. How many codes to generate 
 2. If you want to use a discord webhook, if you dont know how to get a discord webhook url it is located at   
@@ -105,7 +105,35 @@ The code will show you two promps:
 
 The code will start generatring and checking after that step
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For more examples, please refer to the [Documentation](https://example.com)_~~
+
+
+Clone the branch cloudgen
+Code:
+```
+git clone -b (link in branch)
+cd (cloned folder)
+editor herokugen.py
+```
+Search line with text: "WEBHOOK URL" and replace it an your webhook url.
+
+Then, save file and enter:
+```
+git push https://github.com/(username)/(repo name)
+```
+
+You see the line: "Username for github.com:", enter your github username
+by analogy, with the line: "Password for (username)@github.com:", enter your password of github password
+
+Then, go to heroku.com/signup
+Register into heroku.
+Next, create app by button "New app"
+Press "create".
+Go Deploy -> GitHub, and authorizate a github account.
+Next, enter your repo name, which contains a modified files, and hit "Connect".
+Last step: list to line: Manual Deploy, and click Deploy branch.
+Done! Your own gen has working, and if he found a valid code, he send it to your discord channel instantly.
+Written by TerminlPR0
 
 ## Roadmap
 
